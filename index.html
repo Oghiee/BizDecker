@@ -3,7 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bizdecker - Virtual Assistant Management Marketing Consultants</title>
+    <title>Bizdecker - Virtual Assistant Management & AI Marketing Consultants</title>
+    <meta name="description" content="Transform your business with Bizdecker's virtual assistant management, AI-powered marketing strategies, and comprehensive training programs. Expert consultants helping businesses scale efficiently.">
+    <meta name="keywords" content="virtual assistant management, AI marketing, business consulting, digital marketing, virtual assistants, business automation, marketing strategy">
+    <meta name="author" content="Bizdecker Mama Advertizer Inc.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bizdecker - Virtual Assistant Management & AI Marketing Consultants">
+    <meta property="og:description" content="Transform your business with expert virtual assistant management and AI-powered marketing solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bizdecker.com">
+    <meta property="og:image" content="https://bizdecker.com/assets/logo.png">
+    <meta property="og:site_name" content="Bizdecker">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bizdecker - Virtual Assistant Management & AI Marketing">
+    <meta name="twitter:description" content="Expert virtual assistant management and AI-powered marketing solutions for business growth.">
+    <meta name="twitter:image" content="https://bizdecker.com/assets/logo.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bizdecker.com">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bizdecker Mama Advertizer Inc.",
+        "url": "https://bizdecker.com",
+        "logo": "https://bizdecker.com/assets/logo.png",
+        "description": "Virtual Assistant Management and AI Marketing Consultants",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Suite G29, 2340 Dundas Street West",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-647-710-8471",
+            "contactType": "customer service",
+            "email": "bizdeckermamaadvertizer@gmail.com"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/bizdecker-virtual-marketing-management-advertising-studio-228347380",
+            "https://www.facebook.com/share/16CtNwfGMk",
+            "https://www.instagram.com/bizdecker_mama_advertizer_inc",
+            "https://www.tiktok.com/@bizdeckervmma.sui"
+        ]
+    }
+    </script>
+    
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,19 +72,20 @@
                 <span>Bizdecker Mama Advertizer Inc.</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
                 <li class="has-dropdown">
-                    <a href="#services">Services</a>
+                    <a href="#services">What We Do <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                     <ul class="dropdown">
-                        <li><a href="training.html">Training</a></li>
+                        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                        <li><a href="#pricing" onclick="closeMenu()">Pricing</a></li>
+                        <li><a href="training.html" onclick="closeMenu(); navigateToTraining(event)">Training</a></li>
+                        <li><a href="#process" onclick="closeMenu()">Process</a></li>
                     </ul>
                 </li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="nav-toggle">
+            <div class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('show')">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -52,7 +106,7 @@
                 </p>
                 <div class="hero-buttons">
                     <button class="btn btn-primary" onclick="openCalendly()">Book an Appointment</button>
-                    <button class="btn btn-secondary" onclick="window.location.href='training.html'">Training</button>
+                    <button class="btn btn-secondary" onclick="navigateToTraining(event)">Training</button>
                 </div>
             </div>
         </div>
@@ -662,5 +716,43 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Close mobile menu function
+        function closeMenu() {
+            document.querySelector('.nav-menu').classList.remove('show');
+        }
+        
+        // Scroll to top when page loads
+        window.addEventListener('load', function() {
+            window.scrollTo(0, 0);
+        });
+        
+        // Clean URL navigation function
+        function navigateToTraining(event) {
+            if (event) event.preventDefault();
+            
+            // Check if we're on a server (not file://) and try clean URL
+            if (window.location.protocol !== 'file:') {
+                const currentHost = window.location.host;
+                const cleanUrl = window.location.protocol + '//' + currentHost + '/training';
+                
+                // Try to navigate to clean URL
+                fetch(cleanUrl, { method: 'HEAD' })
+                    .then(response => {
+                        if (response.ok) {
+                            window.location.href = cleanUrl;
+                        } else {
+                            window.location.href = 'training.html';
+                        }
+                    })
+                    .catch(() => {
+                        window.location.href = 'training.html';
+                    });
+            } else {
+                // Fallback for local file testing
+                window.location.href = 'training.html';
+            }
+        }
+    </script>
 </body>
 </html> 

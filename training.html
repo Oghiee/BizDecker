@@ -3,7 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Training Programs - Bizdecker</title>
+    <title>Professional Training Programs - Bizdecker AI-Boosted Learning</title>
+    <meta name="description" content="Professional training programs in AI marketing, virtual assistant management, and business consulting. Get certified with Bizdecker's comprehensive learning tracks and workshops.">
+    <meta name="keywords" content="AI training, virtual assistant training, marketing certification, business training, professional development, AI marketing course">
+    <meta name="author" content="Bizdecker Mama Advertizer Inc.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Professional Training Programs - Bizdecker AI Learning">
+    <meta property="og:description" content="Comprehensive AI-powered training programs for virtual assistant management and marketing excellence.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bizdecker.com/training">
+    <meta property="og:image" content="https://bizdecker.com/assets/logo.png">
+    <meta property="og:site_name" content="Bizdecker">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Professional Training Programs - Bizdecker">
+    <meta name="twitter:description" content="AI-powered training programs for business excellence and professional certification.">
+    <meta name="twitter:image" content="https://bizdecker.com/assets/logo.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bizdecker.com/training">
+    
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,19 +40,20 @@
                 <span>Bizdecker Mama Advertizer Inc.</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html" onclick="navigateToHome(event)">Home</a></li>
+                <li><a href="index.html#about" onclick="navigateToSection(event, 'about')">About</a></li>
+                <li><a href="index.html#contact" onclick="navigateToSection(event, 'contact')">Contact</a></li>
                 <li class="has-dropdown">
-                    <a href="index.html#services" class="active">Services</a>
+                    <a href="index.html#services">What We Do <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                     <ul class="dropdown">
-                        <li><a href="training.html">Training</a></li>
+                        <li><a href="index.html#services" onclick="closeMenu(); navigateToSection(event, 'services')">Services</a></li>
+                        <li><a href="index.html#pricing" onclick="closeMenu(); navigateToSection(event, 'pricing')">Pricing</a></li>
+                        <li><a href="training.html" onclick="closeMenu()">Training</a></li>
+                        <li><a href="index.html#process" onclick="closeMenu(); navigateToSection(event, 'process')">Process</a></li>
                     </ul>
                 </li>
-                <li><a href="index.html#pricing">Pricing</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#process">Process</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
             </ul>
-            <div class="nav-toggle">
+            <div class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('show')">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -132,7 +155,6 @@
 
                 <!-- Digital Marketing Training -->
                 <div class="program-card featured">
-                    <div class="featured-badge">Most Popular</div>
                     <div class="program-header">
                         <div class="program-icon">
                             <i class="fas fa-bullhorn"></i>
@@ -148,7 +170,6 @@
                             <li><i class="fas fa-check-circle"></i>Social Media Marketing Automation</li>
                             <li><i class="fas fa-check-circle"></i>Data Analytics & Performance Tracking</li>
                             <li><i class="fas fa-check-circle"></i>AI Tools for Visual Content</li>
-                            <li><i class="fas fa-check-circle"></i>Campaign Strategy & Execution</li>
                         </ul>
                         <div class="program-price">
                             <span class="price-label">Investment:</span>
@@ -693,6 +714,65 @@
             setupModal('certification-programs-card', 'certification-programs-modal');
             setupModal('consulting-services-card', 'consulting-services-modal');
         });
+        
+        // Close mobile menu function
+        function closeMenu() {
+            document.querySelector('.nav-menu').classList.remove('show');
+        }
+        
+        // Clean URL navigation function
+        function navigateToHome(event) {
+            if (event) event.preventDefault();
+            
+            // Check if we're on a server (not file://) and try clean URL
+            if (window.location.protocol !== 'file:') {
+                const currentHost = window.location.host;
+                const cleanUrl = window.location.protocol + '//' + currentHost + '/';
+                
+                // Try to navigate to clean URL
+                fetch(cleanUrl, { method: 'HEAD' })
+                    .then(response => {
+                        if (response.ok) {
+                            window.location.href = cleanUrl;
+                        } else {
+                            window.location.href = 'index.html';
+                        }
+                    })
+                    .catch(() => {
+                        window.location.href = 'index.html';
+                    });
+            } else {
+                // Fallback for local file testing
+                window.location.href = 'index.html';
+            }
+        }
+        
+        // Navigate to specific section on home page
+        function navigateToSection(event, sectionId) {
+            event.preventDefault();
+            
+            // Check if we're on a server (not file://) and try clean URL
+            if (window.location.protocol !== 'file:') {
+                const currentHost = window.location.host;
+                const cleanUrl = window.location.protocol + '//' + currentHost + '/#' + sectionId;
+                
+                // Try to navigate to clean URL
+                fetch(cleanUrl, { method: 'HEAD' })
+                    .then(response => {
+                        if (response.ok) {
+                            window.location.href = cleanUrl;
+                        } else {
+                            window.location.href = 'index.html#' + sectionId;
+                        }
+                    })
+                    .catch(() => {
+                        window.location.href = 'index.html#' + sectionId;
+                    });
+            } else {
+                // Fallback for local file testing
+                window.location.href = 'index.html#' + sectionId;
+            }
+        }
     </script>
 </body>
 </html>
