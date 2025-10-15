@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Programs - Bizdecker</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.png" alt="Bizdecker Logo" class="logo-img" />
+                <span>Bizdecker Mama Advertizer Inc.</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="index.html#services" class="active">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="training.html">Training</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Training Hero Section -->
+    <section class="training-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Professional <span class="highlight">Training Programs</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Empower your team with cutting-edge skills in virtual assistant management, digital marketing, and AI-powered business solutions.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToPrograms()">Explore Programs</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='index.html#contact'">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Overview -->
+    <section class="training-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Our Training?</h2>
+                <p>Industry-leading expertise to transform your workforce</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certified Programs</h3>
+                    <p>Receive industry-recognized certifications upon completion of our comprehensive training modules.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from seasoned professionals with years of real-world experience in their respective fields.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Hands-On Learning</h3>
+                    <p>Practical, project-based training that prepares you for real-world challenges and scenarios.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Flexible Formats</h3>
+                    <p>Choose from in-person, online, or hybrid training options to fit your schedule and needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programs -->
+    <section id="programs" class="training-programs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Training Programs</h2>
+                <p>Comprehensive courses designed for success</p>
+            </div>
+            <div class="programs-grid">
+                <!-- Virtual Assistant Training -->
+                <div class="program-card">
+                    <div class="program-header">
+                        <div class="program-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Virtual Assistant Management Training</h3>
+                        <span class="program-duration">8 Weeks | 40 Hours</span>
+                    </div>
+                    <div class="program-content">
+                        <p class="program-description">Master the art of managing virtual assistants and remote teams effectively.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check-circle"></i>Remote Team Leadership</li>
+                            <li><i class="fas fa-check-circle"></i>Workflow Optimization Strategies</li>
+                            <li><i class="fas fa-check-circle"></i>Communication & Collaboration Tools</li>
+                            <li><i class="fas fa-check-circle"></i>Performance Management</li>
+                            <li><i class="fas fa-check-circle"></i>Task Delegation Best Practices</li>
+                        </ul>
+                        <div class="program-price">
+                            <span class="price-label">Investment:</span>
+                            <span class="price-amount">CAD 2,500</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing Training -->
+                <div class="program-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="program-header">
+                        <div class="program-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>AI-Powered Digital Marketing</h3>
+                        <span class="program-duration">10 Weeks | 50 Hours</span>
+                    </div>
+                    <div class="program-content">
+                        <p class="program-description">Learn cutting-edge marketing strategies powered by artificial intelligence.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check-circle"></i>AI-Enhanced SEO & Content Creation</li>
+                            <li><i class="fas fa-check-circle"></i>Programmatic Advertising</li>
+                            <li><i class="fas fa-check-circle"></i>Social Media Marketing Automation</li>
+                            <li><i class="fas fa-check-circle"></i>Data Analytics & Performance Tracking</li>
+                            <li><i class="fas fa-check-circle"></i>AI Tools for Visual Content</li>
+                            <li><i class="fas fa-check-circle"></i>Campaign Strategy & Execution</li>
+                        </ul>
+                        <div class="program-price">
+                            <span class="price-label">Investment:</span>
+                            <span class="price-amount">CAD 3,500</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Business Process Training -->
+                <div class="program-card">
+                    <div class="program-header">
+                        <div class="program-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Business Process Optimization</h3>
+                        <span class="program-duration">6 Weeks | 30 Hours</span>
+                    </div>
+                    <div class="program-content">
+                        <p class="program-description">Transform your business operations with proven optimization techniques.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check-circle"></i>Process Analysis & Mapping</li>
+                            <li><i class="fas fa-check-circle"></i>Automation Implementation</li>
+                            <li><i class="fas fa-check-circle"></i>KPI Development & Tracking</li>
+                            <li><i class="fas fa-check-circle"></i>Efficiency Improvement Strategies</li>
+                            <li><i class="fas fa-check-circle"></i>Change Management</li>
+                        </ul>
+                        <div class="program-price">
+                            <span class="price-label">Investment:</span>
+                            <span class="price-amount">CAD 2,000</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Content Creation Training -->
+                <div class="program-card">
+                    <div class="program-header">
+                        <div class="program-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>AI Content Creation Mastery</h3>
+                        <span class="program-duration">8 Weeks | 40 Hours</span>
+                    </div>
+                    <div class="program-content">
+                        <p class="program-description">Create compelling visual and video content using AI-powered tools.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check-circle"></i>AI Video Generation Tools</li>
+                            <li><i class="fas fa-check-circle"></i>Professional Photography Techniques</li>
+                            <li><i class="fas fa-check-circle"></i>Graphic Design Fundamentals</li>
+                            <li><i class="fas fa-check-circle"></i>Content Strategy & Planning</li>
+                            <li><i class="fas fa-check-circle"></i>Brand Storytelling</li>
+                        </ul>
+                        <div class="program-price">
+                            <span class="price-label">Investment:</span>
+                            <span class="price-amount">CAD 2,800</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Training -->
+    <section class="custom-training">
+        <div class="container">
+            <div class="custom-training-content">
+                <div class="custom-training-text">
+                    <h2>Need Custom Training?</h2>
+                    <p>We offer tailored training programs designed specifically for your organization's unique needs. Whether you need specialized workshops, on-site training, or ongoing education programs, our team can create a custom solution.</p>
+                    <ul class="custom-features">
+                        <li><i class="fas fa-check"></i>Customized curriculum based on your goals</li>
+                        <li><i class="fas fa-check"></i>Flexible scheduling and delivery formats</li>
+                        <li><i class="fas fa-check"></i>On-site or remote training options</li>
+                        <li><i class="fas fa-check"></i>Dedicated support and follow-up</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Request Custom Training</button>
+                </div>
+                <div class="custom-training-visual">
+                    <div class="custom-icon-grid">
+                        <div id="corporate-training-card" class="custom-icon-item clickable">
+                            <i class="fas fa-building"></i>
+                            <span>Corporate Training</span>
+                            <span class="click-info">Click for more information</span>
+                        </div>
+                        <div id="team-workshops-card" class="custom-icon-item clickable">
+                            <i class="fas fa-users"></i>
+                            <span>Team Workshops</span>
+                            <span class="click-info">Click for more information</span>
+                        </div>
+                        <div id="certification-programs-card" class="custom-icon-item clickable">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Certification Programs</span>
+                            <span class="click-info">Click for more information</span>
+                        </div>
+                        <div id="consulting-services-card" class="custom-icon-item clickable">
+                            <i class="fas fa-handshake"></i>
+                            <span>Consulting Services</span>
+                            <span class="click-info">Click for more information</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="training-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <p>Hear from our training program graduates</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The Virtual Assistant Management training transformed how we operate. Our team efficiency increased by 40% within the first month!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Sarah Johnson</strong>
+                        <span>Operations Manager, Tech Solutions Inc.</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The AI-Powered Digital Marketing course was exactly what we needed. We've seen a 200% increase in qualified leads."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Michael Chen</strong>
+                        <span>Marketing Director, Growth Hub</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Excellent hands-on training with real-world applications. The instructors were knowledgeable and supportive throughout."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Emily Rodriguez</strong>
+                        <span>Business Owner, Creative Studios</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Programs Modal -->
+    <div id="certification-programs-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Bizdecker Professional Certifications</h2>
+
+            <h3>1. Certificate in Generative AI Prompt Engineering</h3>
+            <blockquote style="background: transparent; padding: 1rem; border-left: 4px solid var(--medium-slate-blue); margin: 1.5rem 0; font-style: italic; color: #4b5563;">
+                Awarded for mastery in crafting strategic, creative, and brand-aligned prompts for generative AI systems, with applications in marketing, messaging, and design.
+            </blockquote>
+
+            <h3>2. Certificate in Design Thinking & Analytics</h3>
+            <blockquote style="background: transparent; padding: 1rem; border-left: 4px solid var(--medium-slate-blue); margin: 1.5rem 0; font-style: italic; color: #4b5563;">
+                Recognizes proficiency in human-centered design, creative problem-solving, and data-informed decision-making for business innovation and campaign strategy.
+            </blockquote>
+
+            <h3>3. Search Engine Optimization (SEO) Certification</h3>
+            <blockquote style="background: transparent; padding: 1rem; border-left: 4px solid var(--medium-slate-blue); margin: 1.5rem 0; font-style: italic; color: #4b5563;">
+                Granted for demonstrated expertise in optimizing digital content for visibility, engagement, and performance across search platforms.
+            </blockquote>
+
+            <h3>4. Management & Marketing Proficiency Certificate</h3>
+            <blockquote style="background: transparent; padding: 1rem; border-left: 4px solid var(--medium-slate-blue); margin: 1.5rem 0; font-style: italic; color: #4b5563;">
+                Awarded to professionals who have completed advanced training in strategic management, brand positioning, and AI-enhanced marketing techniques.
+            </blockquote>
+
+            <h3>5. AI Advertizer Certificate for Business Innovation</h3>
+            <blockquote style="background: transparent; padding: 1rem; border-left: 4px solid var(--medium-slate-blue); margin: 1.5rem 0; font-style: italic; color: #4b5563;">
+                Certifies the ability to leverage AI tools for advertising, campaign creation, and brand storytelling—driving business growth through intelligent automation.
+            </blockquote>
+
+            <h3>Certificate Features</h3>
+            <ul>
+                <li><strong>Issued by:</strong> Bizdecker Mama Advertizer Inc.</li>
+                <li><strong>Signed by:</strong> Founder & Creative Lead, Francisca Igboa</li>
+                <li><strong>Date of Completion:</strong> Upon successful program completion</li>
+                <li><strong>Certificate ID:</strong> Auto-generated unique code</li>
+                <li><strong>Digital Badge:</strong> For LinkedIn and portfolio use</li>
+            </ul>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Enroll in Certification</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consulting Services Modal -->
+    <div id="consulting-services-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Bizdecker Corporate Consulting Services</h2>
+
+            <h3>1. Strategic Management Consulting</h3>
+            <p><strong>Focus:</strong> Organizational clarity, leadership development, and operational efficiency</p>
+            <p><strong>AI Integration:</strong></p>
+            <ul>
+                <li>Predictive analytics for decision-making</li>
+                <li>AI-powered dashboards for performance tracking</li>
+                <li>Workflow automation and intelligent task delegation</li>
+            </ul>
+            <blockquote style="background: transparent; padding: 1rem; border-left: 4px solid var(--medium-slate-blue); margin: 1.5rem 0; font-style: italic; color: #4b5563;">
+                "We don't just manage teams—we empower systems to think ahead."
+            </blockquote>
+
+            <h3>2. Marketing & Brand Strategy</h3>
+            <p><strong>Focus:</strong> Campaign design, audience engagement, and brand voice refinement</p>
+            <p><strong>AI Integration:</strong></p>
+            <ul>
+                <li>Generative copywriting for ads and releases</li>
+                <li>Smart segmentation and targeting</li>
+                <li>Visual design tools for banners, flyers, and event backdrops</li>
+            </ul>
+            <blockquote style="background: transparent; padding: 1rem; border-left: 4px solid var(--medium-slate-blue); margin: 1.5rem 0; font-style: italic; color: #4b5563;">
+                "Your brand isn't static—it evolves with every insight. AI helps us listen, learn, and lead."
+            </blockquote>
+
+            <h3>3. AI Fluency & Transformation Advisory</h3>
+            <p><strong>Focus:</strong> Helping corporate teams adopt AI responsibly and creatively</p>
+            <p><strong>Services:</strong></p>
+            <ul>
+                <li>Executive briefings on AI trends and ethics</li>
+                <li>Team workshops on prompt engineering and AI tools</li>
+                <li>Integration planning for CRM, marketing, and design systems</li>
+            </ul>
+            <blockquote style="background: transparent; padding: 1rem; border-left: 4px solid var(--medium-slate-blue); margin: 1.5rem 0; font-style: italic; color: #4b5563;">
+                "AI isn't replacing your team—it's amplifying their brilliance."
+            </blockquote>
+
+            <h3>Delivery Formats</h3>
+            <ul>
+                <li>On-site and virtual consulting sessions</li>
+                <li>Custom workshops and team labs</li>
+                <li>Strategic playbooks and branded toolkits</li>
+                <li>Access to Bizdecker's AI-powered platform for ongoing support</li>
+            </ul>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Request Consulting</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Workshops Modal -->
+    <div id="team-workshops-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Team Workshops - Where Teams Build Brilliance</h2>
+            
+            <blockquote style="background: transparent; padding: 1rem; border-left: 4px solid var(--medium-slate-blue); margin: 1.5rem 0; font-style: italic; color: #4b5563;">
+                "Where teams don't just bond—they build brilliance."
+            </blockquote>
+
+            <h3>1. Workshop Themes</h3>
+            
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+                    <thead>
+                        <tr style="background: white;">
+                            <th style="padding: 1rem; text-align: left; border: 1px solid #e5e7eb;">Title</th>
+                            <th style="padding: 1rem; text-align: left; border: 1px solid #e5e7eb;">Description</th>
+                            <th style="padding: 1rem; text-align: left; border: 1px solid #e5e7eb;">AI Element</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>The Storyteller Circuit</strong></td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Teams co-create brand stories using poetic prompts and AI-generated narratives</td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">GPT-powered story starters & tone stylizers</td>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Design Sprint Lab</strong></td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Collaborative flyer/banner creation with live feedback</td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Canva AI + real-time design assistant</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Prompt Playground</strong></td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Learn prompt engineering through team challenges</td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">AI prompt scoring & remix suggestions</td>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Empowerment Hackathon</strong></td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Build campaigns around social impact themes</td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">AI copywriting + strategy mapping</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>AI Art Jam</strong></td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Create digital art together using generative tools</td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Midjourney or DALL·E integrations</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>2. Outcomes & Benefits</h3>
+            <ul>
+                <li>Boost team creativity and cohesion</li>
+                <li>Learn practical AI tools for business</li>
+                <li>Discover brand voice through collaborative play</li>
+                <li>Leave with tangible assets (flyers, taglines, campaign drafts)</li>
+            </ul>
+
+            <h3>3. Booking & Customization</h3>
+            <p><strong>Form: Design Your Workshop</strong></p>
+            <ul>
+                <li>Team size, goals, preferred theme</li>
+                <li>Calendar integration for scheduling</li>
+                <li>Tiered packages: Starter, Premium, Executive</li>
+            </ul>
+
+            <h3>4. Showcase & Testimonials</h3>
+            <ul>
+                <li>Photo gallery from past workshops</li>
+                <li>Quotes from corporate clients</li>
+                <li>Highlight reel of AI-generated outputs</li>
+            </ul>
+
+            <h3>5. Access & Payment</h3>
+            <ul>
+                <li>Stripe or PayPal integration for booking</li>
+                <li>Member login for workshop materials</li>
+                <li>Downloadable post-workshop toolkit</li>
+            </ul>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Book Your Workshop</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Corporate Training Modal -->
+    <div id="corporate-training-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Bizdecker AI-Boosted Corporate Training Framework</h2>
+
+            <h3>1. Discovery & Personalization</h3>
+            <ul>
+                <li><strong>AI-Powered Onboarding Survey:</strong> Assess client goals, team roles, and brand tone</li>
+                <li><strong>Persona Mapping:</strong> AI clusters learners into profiles (e.g., "The Visionary," "The Strategist," "The Builder")</li>
+                <li><strong>Customized Learning Paths:</strong> Tailored modules based on role, industry, and campaign needs</li>
+            </ul>
+            <blockquote style="background: transparent; padding: 1rem; border-left: 4px solid var(--medium-slate-blue); margin: 1.5rem 0; font-style: italic; color: #4b5563;">
+                "One-size-fits-none. We train the mind that leads, not just the hands that follow."
+            </blockquote>
+
+            <h3>2. Modular Learning Tracks</h3>
+            
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+                    <thead>
+                        <tr style="background: white;">
+                            <th style="padding: 1rem; text-align: left; border: 1px solid #e5e7eb;">Track</th>
+                            <th style="padding: 1rem; text-align: left; border: 1px solid #e5e7eb;">Focus</th>
+                            <th style="padding: 1rem; text-align: left; border: 1px solid #e5e7eb;">AI Boost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Brand Identity & Messaging</strong></td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Visual storytelling, tone of voice, poetic branding</td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">AI-generated taglines, tone analyzers</td>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Campaign Strategy</strong></td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Funnel design, audience targeting, KPI mapping</td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Predictive analytics, smart segmentation</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Content Creation</strong></td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Copywriting, design, social media</td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">AI writing assistants, image generators</td>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Event Activation</strong></td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Planning, promotion, engagement</td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">AI scheduling, RSVP optimization</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>AI Fluency for Teams</strong></td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Prompt engineering, ethical use, automation</td>
+                            <td style="padding: 1rem; border: 1px solid #e5e7eb;">Hands-on labs with GPT-style tools</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><strong>Each module includes:</strong></p>
+            <ul>
+                <li>Interactive video lessons</li>
+                <li>Real-world Bizdecker case studies</li>
+                <li>AI-powered exercises (e.g., "Rewrite this CTA in 3 brand voices")</li>
+            </ul>
+
+            <h3>3. Tools & Templates Hub</h3>
+            <ul>
+                <li><strong>Downloadable assets:</strong> Campaign planners, flyer templates, prompt libraries</li>
+                <li><strong>AI-integrated tools:</strong> Canva, Jasper, HubSpot, Notion AI</li>
+                <li><strong>"Prompt Playground":</strong> Try out AI copy, design, and strategy prompts in real time</li>
+            </ul>
+
+            <h3>4. Live Labs & Coaching</h3>
+            <ul>
+                <li><strong>Monthly "AI Strategy Clinics"</strong> with Francisca or guest experts</li>
+                <li><strong>Design Sprints:</strong> Teams co-create a campaign in 90 minutes</li>
+                <li><strong>Feedback Loops:</strong> AI summarizes team progress and suggests next steps</li>
+            </ul>
+
+            <h3>5. Progress Tracking & Certification</h3>
+            <ul>
+                <li>Smart dashboards for HR and team leads</li>
+                <li>"Bizdecker Certified Brand Architect" badges</li>
+                <li>Optional showcase of top-performing teams on your site or newsletter</li>
+            </ul>
+
+            <h3>Tech Stack Suggestions</h3>
+            <ul>
+                <li><strong>LMS:</strong> LearnWorlds, TalentLMS, or custom Webflow + Memberstack portal</li>
+                <li><strong>AI Tools:</strong> OpenAI API, Canva SDK, Jasper, Surfer SEO</li>
+                <li><strong>Analytics:</strong> Mixpanel, Google Analytics, or custom dashboards</li>
+                <li><strong>Payments & Access:</strong> Stripe or PayPal for tiered training packages</li>
+            </ul>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Request Corporate Training Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Bizdecker Logo" class="logo-img" />
+                        <span>Bizdecker</span>
+                    </div>
+                    <p>Transforming businesses through virtual assistant management and strategic marketing consulting.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="index.html#services">Virtual Assistant Management</a></li>
+                        <li><a href="index.html#services">Marketing Strategy</a></li>
+                        <li><a href="index.html#services">Process Optimization</a></li>
+                        <li><a href="index.html#services">Business Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="training.html">Training</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/bizdecker-virtual-marketing-management-advertising-studio-228347380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/16CtNwfGMk/?mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bizdecker_mama_advertizer_inc?igsh=YXU5MXNvZXIzMzd2&utm_source=ig_contact_invite"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@bizdeckervmma.sui?_t=ZS-8z8BSDDiF61&_r=1"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bizdecker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Scroll to programs section
+        function scrollToPrograms() {
+            const programsSection = document.getElementById('programs');
+            if (programsSection) {
+                programsSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Modal functionality for both Corporate Training and Team Workshops
+        document.addEventListener('DOMContentLoaded', () => {
+            // Function to setup modal
+            function setupModal(cardId, modalId) {
+                const card = document.getElementById(cardId);
+                const modal = document.getElementById(modalId);
+                
+                if (card && modal) {
+                    const closeBtn = modal.querySelector('.modal-close');
+                    
+                    // Open modal when clicking the card
+                    card.addEventListener('click', () => {
+                        modal.classList.add('show');
+                        document.body.style.overflow = 'hidden';
+                    });
+                    
+                    // Close modal when clicking the close button
+                    if (closeBtn) {
+                        closeBtn.addEventListener('click', () => {
+                            modal.classList.remove('show');
+                            document.body.style.overflow = 'auto';
+                        });
+                    }
+                    
+                    // Close modal when clicking outside the modal content
+                    modal.addEventListener('click', (e) => {
+                        if (e.target === modal) {
+                            modal.classList.remove('show');
+                            document.body.style.overflow = 'auto';
+                        }
+                    });
+                    
+                    // Close modal on escape key
+                    document.addEventListener('keydown', (e) => {
+                        if (e.key === 'Escape' && modal.classList.contains('show')) {
+                            modal.classList.remove('show');
+                            document.body.style.overflow = 'auto';
+                        }
+                    });
+                }
+            }
+            
+            // Setup all modals
+            setupModal('corporate-training-card', 'corporate-training-modal');
+            setupModal('team-workshops-card', 'team-workshops-modal');
+            setupModal('certification-programs-card', 'certification-programs-modal');
+            setupModal('consulting-services-card', 'consulting-services-modal');
+        });
+    </script>
+</body>
+</html>
+
